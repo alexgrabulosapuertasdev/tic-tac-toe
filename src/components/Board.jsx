@@ -3,7 +3,7 @@ import { styles } from "../styles/board";
 import { Square } from "./Square";
 
 export function Board() {
-  const { play, values, winner } = useBoard();
+  const { play, resetGame, values, winner } = useBoard();
 
   return (
     <section style={styles.container}>
@@ -17,6 +17,7 @@ export function Board() {
       {
         winner && <p>Congratulations {winner}!</p>
       }
+      <button onClick={resetGame} style={styles.button}>PLAY AGAIN!</button>
     </section>
   );
 }

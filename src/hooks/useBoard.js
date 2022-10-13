@@ -30,8 +30,15 @@ export function useBoard() {
     hasWin();
   };
 
+  const resetGame = () => {
+    setTurn(0);
+    setValues([]);
+    setWinner(undefined);
+  };
+
   return {
     play,
+    resetGame,
     values,
     winner,
   };

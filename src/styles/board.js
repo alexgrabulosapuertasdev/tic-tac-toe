@@ -13,4 +13,12 @@ export const styles = {
     gridTemplateRows: 'repeat(3, 100px)',
     margin: '1rem',
   },
+  button: {
+    background: '#878787',
+    border: 'none',
+    borderRadius: '25px',
+    color: '#FFF',
+    fontWeight: 'bold',
+    padding: '8px 24px',
+  },
 };
